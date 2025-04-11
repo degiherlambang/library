@@ -35,7 +35,7 @@ public class ListBookWithPageImpl implements ProcessLibraryCommon {
                 page = (data.getPageSize()*data.getPage())-data.getPageSize();
                 pageSize = data.getPageSize();
             }
-            return new CommonResponse().getCommonResponseOk((business.findBookWithPage(String.valueOf(page), String.valueOf(pageSize))));
+            return new CommonResponse().getCommonResponseListBooks((business.findBookWithPage(String.valueOf(page), String.valueOf(pageSize))), data.getPage(), data.getPageSize());
         } catch (Exception e) {
             log.info("error: {}", e.getMessage());
             return new CommonResponse().getCommonResponseFailed();
