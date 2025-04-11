@@ -10,7 +10,7 @@ This scope include:
 5. List Book with Pagination
 
 First initial 10 books registered in table:
-![img.png](img.png
+![img0.png](src/main/resources/static/img0.png)
 
 Regis New Book Using REST API:
 ![img_1.png](src/main/resources/static/img_1.png)
@@ -34,3 +34,6 @@ Page: 2 PageSize:2
 ![img_8.png](src/main/resources/static/img_8.png)
 Page: 3 PageSize:2
 ![img_9.png](src/main/resources/static/img_9.png)
+
+Unit Test for coverage is Above 90% lines code:
+![img.png](src/main/resources/static/img.png)
