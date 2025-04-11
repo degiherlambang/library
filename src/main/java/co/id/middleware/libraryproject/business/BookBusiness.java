@@ -10,8 +10,6 @@ public interface BookBusiness {
 
     public Book findBookById(UUID id);
 
-    public List<Book> findBookAll();
-
     public List<Book> findBookWithPage(String page, String pageSize);
 
     public void save(Book book);

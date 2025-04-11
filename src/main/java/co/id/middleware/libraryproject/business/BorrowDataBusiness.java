@@ -6,11 +6,8 @@ import java.util.UUID;
 
 public interface BorrowDataBusiness {
 
-    public BorrowData findBorrowDataById(UUID id);
 
     public BorrowData findBorrowDataByBookId(UUID id);
-
-    public BorrowData findBorrowDataByBookName(String name);
 
     public void save(BorrowData borrowData);
 

@@ -26,12 +26,6 @@ public class BookBusinessImpl implements BookBusiness {
     }
 
     @Override
-    public List<Book> findBookAll() {
-        log.info("{}.findBookAll", this.getClass().getSimpleName());
-        return repository.findAll();
-    }
-
-    @Override
     public List<Book> findBookWithPage(String page, String pageSize) {
         log.info("{}.findBookWithPage: {},{}", this.getClass().getSimpleName(), page, pageSize);
         return repository.findByPage(page, pageSize);

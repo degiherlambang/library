@@ -17,21 +17,9 @@ public class BorrowDataBusinessImpl implements BorrowDataBusiness {
     private BorrowDataRepository repository;
 
     @Override
-    public BorrowData findBorrowDataById(UUID id) {
-        log.info("{}.findBorrowDataById: {}", this.getClass().getSimpleName(), id);
-        return repository.findById(id).orElse(null);
-    }
-
-    @Override
     public BorrowData findBorrowDataByBookId(UUID id) {
         log.info("{}.findBorrowDataByBookId: {}", this.getClass().getSimpleName(), id);
         return repository.findByBookId(id);
-    }
-
-    @Override
-    public BorrowData findBorrowDataByBookName(String name) {
-        log.info("{}.findBorrowDataByBookName: {}", this.getClass().getSimpleName(), name);
-        return repository.findByBookName(name);
     }
 
     @Override

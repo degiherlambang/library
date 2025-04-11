@@ -19,12 +19,4 @@ public class ObjectMapperUtil {
         }
     }
 
-    public String serialize(Object obj) throws Exception {
-        try {
-            return mapper.writeValueAsString(obj);
-        } catch (JsonProcessingException var3) {
-            throw new Exception(var3);
-        }
-    }
-
 }
