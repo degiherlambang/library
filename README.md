@@ -1,6 +1,6 @@
 # LIBRARY
 
-This project simple CRUD for Librarian. Using Springboot JAVA as framework projects and H2 Database.
+This project sample for Librarian. Using Springboot JAVA as framework projects and H2 Database.
 
 This scope include:
 1. Initial Books at Database
